@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "Server.Protos";
+
+service Iarna
+{
+	rpc SendBack(UserInfoIarna) returns (ZodieIarna);
+}
+
+message UserInfoIarna
+{
+	string dateOfBirth = 1;
+}
+message ZodieIarna
+{
+	string zodie = 1;
+}
