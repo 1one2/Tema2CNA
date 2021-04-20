@@ -25,11 +25,32 @@ namespace Server.Services
                 int d1 = Int32.Parse(line.Substring(0, 2));
                 int d2 = Int32.Parse(line.Substring(6, 2));
                 int d = Int32.Parse(date.Substring(0, 2));
-                Console.WriteLine(m1 + " " + m2 + " " + m);
-                if ((d >= d1 && m >= m1) && (m <= m2 && d <= d2))
+                if (m1 == m2 && m1 == m)
                 {
+                    if (d >= d1 && d <= d2)
+                    {
+                        return line.Substring(12, line.Length - 12);
+                    }
 
-                    return line.Substring(12, line.Length - 12);
+                }
+                else
+                {
+                    if (m == m1)
+                    {
+                        if (d >= d1)
+                        {
+
+                            return line.Substring(12, line.Length - 12);
+                        }
+                    }
+
+                    else if (m == m2)
+                    {
+                        if (d <= d2)
+                        {
+                            return line.Substring(12, line.Length - 12);
+                        }
+                    }
                 }
             }
             return "aa";
