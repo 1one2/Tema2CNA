@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option csharp_namespace = "Server.Protos";
+
+
+service Gate
+{
+	rpc ParseToSeason(UserInfo) returns (Reply);
+}
+
+message UserInfo
+{
+	string dateOfBirth = 1;
+}
+
+message Reply
+{
+	string zodie = 1;
+}
