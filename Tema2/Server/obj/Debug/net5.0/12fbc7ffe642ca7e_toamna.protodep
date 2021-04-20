@@ -1,0 +1,2 @@
+obj\Debug\net5.0\Protos/Toamna.cs \
+obj\Debug\net5.0\Protos/ToamnaGrpc.cs: Protos/toamna.proto

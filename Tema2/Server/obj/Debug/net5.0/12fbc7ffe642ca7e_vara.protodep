@@ -1,0 +1,2 @@
+obj\Debug\net5.0\Protos/Vara.cs \
+obj\Debug\net5.0\Protos/VaraGrpc.cs: Protos/vara.proto
