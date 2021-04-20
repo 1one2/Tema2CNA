@@ -13,7 +13,7 @@ namespace Server.Services
         public PrimavaraService()
         {
 
-            lines = System.IO.File.ReadAllLines("Services/Primavara.txt");
+            lines = System.IO.File.ReadAllLines("Seasons/Primavara.txt");
         }
         private string whichZodie(string date)
         {

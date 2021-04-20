@@ -12,7 +12,7 @@ namespace Server.Services
         private string[] lines;
         public IarnaService()
         {
-            lines = System.IO.File.ReadAllLines("Services/Iarna.txt");
+            lines = System.IO.File.ReadAllLines("Seasons/Iarna.txt");
         }
 
         private string whichZodie(string date)

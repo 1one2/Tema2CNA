@@ -13,7 +13,7 @@ namespace Server.Services
         public VaraService()
         {
 
-            lines = System.IO.File.ReadAllLines("Services/Vara.txt");
+            lines = System.IO.File.ReadAllLines("Seasons/Vara.txt");
         }
         private string whichZodie(string date)
         {

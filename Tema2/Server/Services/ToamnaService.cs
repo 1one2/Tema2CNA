@@ -12,7 +12,7 @@ namespace Server.Services
         public ToamnaService()
         {
 
-            lines = System.IO.File.ReadAllLines("Services/Toamna.txt");
+            lines = System.IO.File.ReadAllLines("Seasons/Toamna.txt");
         }
         private string whichZodie(string date)
         {
